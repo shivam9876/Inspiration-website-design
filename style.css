@@ -1,0 +1,253 @@
+body {
+  margin: 0;
+ 
+  font-family: 'Jost', sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #06131c;
+  display: flex;
+  justify-content: space-around;
+}
+.topnav .logo h2{
+  margin: 10px;
+  color: white;
+}
+.topnav .right-nav a{
+    font-size: 13px;
+    padding: 18px;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+    color: white;
+      border-bottom: 2px solid red;
+}
+.topnav a.active:hover {
+    color: black;
+
+}
+
+.topnav .icon {
+  display: none;
+}
+.displa-none{
+  display: none;
+}
+
+.movement{
+	 position: relative;
+}
+.movement-title p{
+	color: white;
+	font-size: 56px;
+	position: relative;
+	position: absolute;
+  top: 32%;left: 8%;font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+}
+.movement img{
+	width: 100%;
+}
+.main-section{
+	width: 84%;
+	padding:34px 8%;
+	background: #06141f;
+	margin: 0;
+	margin-top: -7px;
+}
+.inspiration {
+    text-align: center;
+    
+}
+
+.inspiration h1,.full-video-gradient-color-text {
+    font-size: 155px;
+    background-image: linear-gradient(90deg, red,red,yellow,green );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+.inspiration  p{
+	font-size: 30px;
+	color: white;
+}
+.video-info-section {
+    margin-top: 16%;
+}
+.video-div{
+	width: 60%;
+	position: relative;
+}
+.video-thumbnail{
+	width: 100%;
+}
+.video-play-icon{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 102px;
+}
+.video-info{
+	width: 40%;
+}
+.video-info p{
+	color: #ffd;
+    font-size: 41px;
+   
+   padding: 76px 89px;
+}
+.full-video-section .video-info p {
+    line-height: 76px;
+}
+.gradient-color-text{
+	background-image: linear-gradient(67deg, red,red,yellow,green );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.video-section{
+	display: inline-flex;
+	margin-bottom: 7%;width: 100%;
+}
+.full-video-section .video-div{
+	width: 100%;
+}
+.full-video-section .video-info{
+	width: 100%;
+	text-align:center;
+}
+.inspires-section{
+	width: 100%;
+	text-align: center;
+	align-items: center;
+	margin-top: 56px;
+}
+.inspires-section h2{
+	color: white;
+	font-size: 40px;
+}
+
+.inspires-section .button-section button {
+    padding: 5px 30px;
+    background: #34475699;
+    border: none;
+    color: white;
+    border-radius: 2px;
+}
+
+.inspires-section .button-section button:hover,.inspires-section .button-section button.active{
+	background: white;
+	color: black;
+}
+.inspires-section p{
+	margin-top:30px;
+    color: white;
+    font-size: 28px;
+    padding: 0 21%;
+
+}
+.inspires-section button.share{
+	padding: 7px 45px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 10px;
+    font-weight: 600
+}
+.product{
+	width: 84%;
+    padding: 8%;
+    background: #ffffff;
+    margin: 0;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.product .car-div{
+	width: 30%;
+    
+}
+.product .car-div img {
+    width: 200px;
+    height: 86px !important;
+}
+.product .car-div h4{
+	margin-bottom:10px;
+}.product .car-div p{
+	font-size: 12px;
+}
+
+/*media css*/
+
+
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .inspiration h1{
+  		font-size: 105px;
+    }
+  .video-section {
+    display: block;
+	}
+	.video-div {
+    width: 100%;
+	}
+	.video-info {
+    width: 100%;
+    text-align: center;
+}
+.video-info p{
+	padding:0;
+}
+.full-video-gradient-color-text {
+    font-size: 94px;}
+    .inspires-section .button-section button{
+    	margin: 13px 11px;
+    }
+    .product{
+    	display: block;
+    }
+    .product .car-div {
+    width: 100%;
+    text-align: center;
+}
+}
+
+
+
+@media screen and (max-width: 540px) {
+.inspiration h1 {
+    font-size: 80px;
+}
+}
